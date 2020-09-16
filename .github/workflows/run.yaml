@@ -24,8 +24,4 @@ jobs:
     - name: 签到
       run: |
         pip install -r requirements.txt
-       
-    - name: Build and publish
-
-      run: | 
-          python index.py 
+         python index.py 
