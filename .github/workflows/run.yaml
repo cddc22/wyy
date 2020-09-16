@@ -27,5 +27,4 @@ jobs:
        
     - name: Build and publish
 
-      run: |
-        python index.py 
+      run: | python index.py 
