@@ -13,22 +13,19 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-     
+     timeout-minutes:30
 
-     steps:
+
+    steps:
     - uses: actions/checkout@v2
     - name: 初始化Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
- 
-   - name: Install Dependencies
-      
-      timeout-minutes:30
+    - name: Install Dependencies
               
       run: |
         pip install -r requirements.txt
          python index.py 
          python main.py
-       
-  timeout-minutes:30
+     
