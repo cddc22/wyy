@@ -11,10 +11,9 @@ on:
     types: started
 
 jobs:
-  build:
-  runs-on: ubuntu-latest
-  timeout-minutes: 30
-
+   
+   build:
+    runs-on: ubuntu-latest
 
 
     steps:
@@ -24,9 +23,9 @@ jobs:
       with:
         python-version: 3.7
     - name: Install Dependencies
+       
      
       run: |
         pip install -r requirements.txt
          python index.py 
          python main.py
-     
