@@ -31,5 +31,5 @@ jobs:
         pip install -r requirements.txt
          python index.py 
          python main.py
-          run: python index.py 
+    
         timeout-minutes:30
